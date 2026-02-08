@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-base-ggemv/tags). For example,
+
+```javascript
 import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@v0.1.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@v0.1.1-deno/mod.js';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@deno/mod.js';
 ```
 
 #### ggemv( order, trans, M, N, α, A, LDA, x, sx, β, y, sy )
@@ -167,7 +172,7 @@ ggemv.ndarray( 'no-transpose', 2, 3, 1.0, A, 3, 1, 0, x, 1, 1, 1.0, y, -2, 2 );
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@v0.1.1-deno/mod.js';
+import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@deno/mod.js';
 
 var opts = {
     'dtype': 'generic'
