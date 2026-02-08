@@ -35,20 +35,32 @@ limitations under the License.
 
 > Perform one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-ggemv
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@esm/index.mjs';
+var ggemv = require( '@stdlib/blas-base-ggemv' );
 ```
 
 #### ggemv( order, trans, M, N, α, A, LDA, x, sx, β, y, sy )
@@ -95,7 +107,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 // Initial arrays...
 var x0 = new Float64Array( [ 0.0, 1.0, 1.0 ] );
@@ -134,7 +146,7 @@ The function has the following additional parameters:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example,
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var A = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 var x = [ 0.0, 1.0, 2.0, 3.0 ];
@@ -165,14 +177,9 @@ ggemv.ndarray( 'no-transpose', 2, 3, 1.0, A, 3, 1, 0, x, 1, 1, 1.0, y, -2, 2 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var ggemv = require( '@stdlib/blas-base-ggemv' );
 
 var opts = {
     'dtype': 'generic'
@@ -190,10 +197,6 @@ console.log( y );
 
 ggemv.ndarray( 'no-transpose', M, N, 1.0, A, N, 1, 0, x, 1, 0, 1.0, y, 1, 0 );
 console.log( y );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -217,7 +220,7 @@ console.log( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -247,8 +250,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-ggemv.svg
 [npm-url]: https://npmjs.org/package/@stdlib/blas-base-ggemv
 
-[test-image]: https://github.com/stdlib-js/blas-base-ggemv/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/blas-base-ggemv/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/blas-base-ggemv/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/blas-base-ggemv/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-ggemv/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/blas-base-ggemv?branch=main
@@ -286,11 +289,11 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/blas/base/dgemv]: https://github.com/stdlib-js/blas-base-dgemv/tree/esm
+[@stdlib/blas/base/dgemv]: https://github.com/stdlib-js/blas-base-dgemv
 
-[@stdlib/blas/base/sgemv]: https://github.com/stdlib-js/blas-base-sgemv/tree/esm
+[@stdlib/blas/base/sgemv]: https://github.com/stdlib-js/blas-base-sgemv
 
-[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor/tree/esm
+[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
 
 <!-- <related-links> -->
 
