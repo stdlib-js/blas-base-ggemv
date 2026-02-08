@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@esm/index.mjs';
+import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@v0.1.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@esm/index.mjs';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@v0.1.1-esm/index.mjs';
 ```
 
 #### ggemv( order, trans, M, N, α, A, LDA, x, sx, β, y, sy )
@@ -172,7 +172,7 @@ ggemv.ndarray( 'no-transpose', 2, 3, 1.0, A, 3, 1, 0, x, 1, 1, 1.0, y, -2, 2 );
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@esm/index.mjs';
+import ggemv from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ggemv@v0.1.1-esm/index.mjs';
 
 var opts = {
     'dtype': 'generic'
