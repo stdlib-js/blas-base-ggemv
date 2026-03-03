@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-03-03)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`35ea0d4`](https://github.com/stdlib-js/stdlib/commit/35ea0d4dbf9ebf0c5b023027b3624c2b95fd2cad) - **bench:** use string interpolation in `blas/base/ggemv` [(#10631)](https://github.com/stdlib-js/stdlib/pull/10631) _(by Om-A-osc)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Om-A-osc
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2026-02-08)
