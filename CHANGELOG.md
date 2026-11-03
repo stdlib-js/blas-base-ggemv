@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-01)
+## Unreleased (2026-11-03)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`4eff251`](https://github.com/stdlib-js/stdlib/commit/4eff2519ee5ff28a5f7c5e5c007f17de821218df) - **chore:** update require paths in benchmarks [(#15266)](https://github.com/stdlib-js/stdlib/pull/15266) _(by Philipp Burckhardt)_
 -   [`26c6b7a`](https://github.com/stdlib-js/stdlib/commit/26c6b7ae6f242ecb3edcf3b6e25040cc30d3e949) - **refactor:** replace `isMatrixTranspose` with `resolveStr` in `blas/base/ggemv` [(#12423)](https://github.com/stdlib-js/stdlib/pull/12423) _(by Kaustubh Patange)_
 -   [`f9d1409`](https://github.com/stdlib-js/stdlib/commit/f9d140985e169d34f4e66bd770dc675ea28588a3) - **docs:** add missing JSDoc comment _(by Athan Reines)_
